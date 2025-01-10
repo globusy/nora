@@ -46,3 +46,4 @@ RunFile = run_file
 StopFile = stop_file
 GetItemInfo = get_item_info
 GetItemInfoByName = get_item_info_by_name
+Sleep = sleep
