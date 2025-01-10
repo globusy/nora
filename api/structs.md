@@ -65,7 +65,7 @@
 | Foreground tile ID | **id** | int |
 | Background tile ID | **count** | int |
 | Tile flags | **flag** | int |
-| Tile position | **pos** | vec2i |
+| Tile position | **pos** | [vec2i](#vec2i) |
 | Extra tile data | **extra** | pointer |
 
 ---
@@ -78,7 +78,7 @@
 | Object amount | **amount** | int |
 | Object flags | **flags** | int |
 | Object unique ID | **oid** | int |
-| Object position | **pos** | vec2i |
+| Object position | **pos** | [vec2i](#vec2i) |
 
 ---
 
@@ -98,7 +98,7 @@
 | Check if an item exists | **id** | function(int) -> bool |
 | Get item count | **get_item_count** | function(int) -> int |
 | Get all items | **get_items** | function() -> table |
-| Get specific item | **get_item** | function(int) -> inventory_item_t |
+| Get specific item | **get_item** | function(int) -> [inventory_item_t](#inventory_item_t) |
 
 ---
 
@@ -106,8 +106,8 @@
 | Description | Name | Type |
 |:------------|:----:|:-----|
 | World version | **version** | int |
-| Tile map | **tile_map** | world_tile_map_t |
-| Object map | **object_map** | world_object_map_t |
+| Tile map | **tile_map** | [world_tile_map_t](#world_tile_map_t) |
+| Object map | **object_map** | [world_object_map_t](#world_object_map_t) |
 | World name | **name** | string |
 
 ---
@@ -138,10 +138,10 @@
 | Invisible state | **invis** | bool |
 | Moderator status | **mod** | bool |
 | Super Moderator status | **smod** | bool |
-| Position | **pos** | vec2f |
-| Tile position | **tile** | vec2i |
-| Clothing details | **clothes** | body_parts_t |
-| Body parts | **body_parts** | body_parts_t |
+| Position | **pos** | [vec2f](#vec2f) |
+| Tile position | **tile** | [vec2i](#vec2i) |
+| Clothing details | **clothes** | [body_parts_t](#body_parts_t) |
+| Body parts | **body_parts** | [body_parts_t](#body_parts_t) |
 
 ---
 
@@ -157,10 +157,10 @@
 | Flags | **flags** | int |
 | Float value 1 | **float1** | float |
 | Integer data | **int_data** | int |
-| First position | **pos** | vec2f |
-| Second position | **pos2** | vec2f |
+| First position | **pos** | [vec2f](#vec2f) |
+| Second position | **pos2** | [vec2f](#vec2f) |
 | Float value 2 | **float2** | float |
-| Tile position | **tile** | vec2i |
+| Tile position | **tile** | [vec2i](#vec2i) |
 | Extra data size | **extra_data_size** | int |
 
 ---
