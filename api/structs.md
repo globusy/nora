@@ -1,6 +1,6 @@
 ## Structs
 
-* **[vec2<uint8_t>](#vec2_uint8_t)**
+* **[vec2<uint8_t>](#vec2uint8_t)**
 * **[vec2i](#vec2i)**
 * **[vec2f](#vec2f)**
 * **[vec3f](#vec3f)**
