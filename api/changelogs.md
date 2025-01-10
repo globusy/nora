@@ -1,5 +1,8 @@
 # Changelogs
 
+## 0.6 
+- **added timer and transformer library**
+
 ## 0.5
 - **added structures such as: player_items_t, net_object_manager_t, item_info_manager_t, item_info_t, vec2<uint8_t>, vec3f, vec4f**
 - **run_file(string file_name)** (runs script of that file)
