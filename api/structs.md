@@ -149,12 +149,14 @@
 | Description | Name | Type |
 |:------------|:----:|:-----|
 | Packet type | **type** | [game_packet_type](#game_packet_type) |
+| Packet type | **type_int** | int |
 | Object type | **object_type** | int |
 | First count value | **count1** | int |
 | Second count value | **count2** | int |
 | Network ID | **netid** | int |
 | Item ID | **item** | int |
-| Flags | **flags** | int |
+| Flags | **flags** | packet_flag |
+| Flags | **flags_int** | int |
 | Float value 1 | **float1** | float |
 | Integer data | **int_data** | int |
 | First position | **pos** | [vec2f](#vec2f) |
