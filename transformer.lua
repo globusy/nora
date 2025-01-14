@@ -50,3 +50,5 @@ StopFile = stop_file
 GetItemInfo = get_item_info
 GetItemInfoByName = get_item_info_by_name
 Sleep = sleep
+getTiles = function() return get_world().tile_map.tiles end
+get_tiles = getTiles
