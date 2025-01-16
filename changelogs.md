@@ -5,7 +5,7 @@
 - **automation page added**
 - **auto farm added**
 - **executor page loading (better)**
-- **settings: added show world name (rpc), dont show report logs**
+- **settings: added show world name (rpc), show report logs**
 - **added block ads**
 - **trolling lagging fixed**
 
