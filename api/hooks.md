@@ -1,5 +1,6 @@
 # Hooks
 - **[ON_VARIANT_LIST](#ON_VARIANT_LIST)**
+- **[ON_TEXT_PACKET](#ON_TEXT_PACKET)**
 - **[ON_GAME_PACKET](#ON_GAME_PACKET)**
 - **[ON_RAW_PACKET](#ON_RAW_PACKET)**
 
@@ -10,13 +11,28 @@
 ```lua
 -- example variant list hook to handle the variant list
 function on_variant_list(varlist)
-    -- Iterate through the provided varlist table
+    -- Iterate through the provided varlist
     for i = 1, #varlist do
         print("variant " .. i .. ": " .. varlist[i])
     end
 end
 
 add_hook("varlist", ON_VARIANT_LIST, on_variant_list) 
+-- instead of add_hook you can use add_callback too
+```
+
+---
+
+### ON_TEXT_PACKET
+```lua
+-- blocks slash commands
+function text_packet_hook(type, packet)
+    if packet:find("action|input\n|text|/") then
+		return true;
+	end
+end
+
+add_hook("text_packet", ON_TEXT_PACKET, text_packet_hook) 
 -- instead of add_hook you can use add_callback too
 ```
 
