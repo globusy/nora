@@ -12,6 +12,7 @@
 * **[inventory_item_t](#inventory_item_t)**
 * **[player_items_t](#player_items_t)**
 * **[world_t](#world_t)**
+* **[item_flag](#item_flag)**
 * **[item_info_t](#item_info_t)**
 * **[net_avatar_t](#net_avatar_t)**
 * **[game_packet_t](#game_packet_t)**
@@ -135,6 +136,29 @@
 
 ---
 
+### item_flag
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| No flag | **none** | `0x0` |
+| Flippable item | **flippable** | `0x1` |
+| Editable item | **editable** | `0x2` |
+| Seedless item | **seedless** | `0x4` |
+| Permanent item | **permanent** | `0x8` |
+| Item has no drops | **dropless** | `0x10` |
+| No self interaction | **no_self** | `0x20` |
+| Item has no shadow | **no_shadow** | `0x40` |
+| Item is world-locked | **world_locked** | `0x80` |
+| Beta item | **beta** | `0x100` |
+| Item auto-picks up | **auto_pickup** | `0x200` |
+| Modded item | **mod** | `0x400` |
+| Random growth item | **rand_grow** | `0x800` |
+| Public item | **public_** | `0x1000` |
+| Item is in the foreground | **foreground** | `0x2000` |
+| Holiday item | **holiday** | `0x4000` |
+| Untradeable item | **untradeable** | `0x8000` |
+
+---
+
 ### item_info_t
 | Description | Name | Type |
 |:------------|:----:|:-----|
@@ -144,7 +168,7 @@
 | Hits to destroy | **break_hits** | int |
 | Clothing type | **clothing_type** | [body_part_type](#body_part_type) |
 | Body part | **body_part** | [body_part_type](#body_part_type) |
-| Item flags | **flags** | int |
+| Item flags | **flags** | [item_flag](#item_flag) |
 | Item rarity | **rarity** | int |
 | Item grow time | **grow_time** | int |
 
