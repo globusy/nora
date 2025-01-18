@@ -5,14 +5,12 @@
 * **[set_fps_limit(float)](#set_fps_limit)**
 * **[send_packet(int type, string packet)](#send_packet)**
 * **[send_packet_raw(table game_packet_t, bool to_client = false)](#send_packet_raw)**
-
 * **[get_ping()](#get_ping)**
 * **[get_world()](#get_world)**
 * **[get_players()](#get_players)**
 * **[get_inventory()](#get_inventory)**
 * **[get_local_player()](#get_local_player)**
 * **[get_item_info_manager()](#get_item_info_manager)**
-
 * **[warp(string world name)](#warp)**
 * **[drop(int item_id, int count)](#drop)**
 
