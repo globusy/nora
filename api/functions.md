@@ -27,6 +27,6 @@ send_packet(2, "action|input\n|text|Hello Nora!")
 -- Sends Raw Packet to game
 packet = {}
 packet.type = game_packet_type.state -- or packet.type_int = 0
-packet.flags_int = 48
+packet.flags = packet_flag.facing_right -- or packet.flags_int = 48
 send_packet_raw(packet) 
 ```
