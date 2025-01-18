@@ -1,6 +1,7 @@
 # Hooks
 - **[ON_GAME_PACKET](#ON_GAME_PACKET)**
 
+---
 
 ### ON_GAME_PACKET
 ```lua
