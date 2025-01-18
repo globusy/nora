@@ -96,7 +96,7 @@ log("`9item id (2) name:`` `@" .. item_info_manager.get_item(2).name .. "``.")
 
 ### warp
 ```lua
--- warps to another world
+-- warps to world
 warp("norabetter")
 ```
 
