@@ -187,8 +187,7 @@
 | Super Moderator status | **smod** | bool |
 | Position | **pos** | [vec2f](#vec2f) |
 | Tile position | **tile** | [vec2i](#vec2i) |
-| Clothing details | **clothes** | [body_parts_t](#body_parts_t) |
-| Body parts | **body_parts** | [body_parts_t](#body_parts_t) |
+| Clothes | **clothes** / **body_parts**| [body_parts_t](#body_parts_t) |
 
 ---
 
