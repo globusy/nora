@@ -6,6 +6,8 @@
 * **[vec3f](#vec3f)**
 * **[vec4f](#vec4f)**
 * **[tile_t](#tile_t)**
+* **[tile_extra_t](#tile_extra_t)**
+* **[tile_extra_type](#tile_extra_type)**
 * **[world_object_t](#world_object_t)**
 * **[inventory_item_t](#inventory_item_t)**
 * **[player_items_t](#player_items_t)**
@@ -68,7 +70,26 @@
 | Background tile ID | **count** | int |
 | Tile flags | **flag** | int |
 | Tile position | **pos** | [vec2i](#vec2i) |
-| Extra tile data | **extra** | pointer |
+| Extra tile data | **extra** | [tile_extra_t](#tile_extra_t) |
+
+---
+
+### tile_extra_t
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| Tile extra type | **type** | [tile_extra_type](#tile_extra_type) |
+| Item price | **item_price** | int |
+| Owner ID | **owner** | int |
+| Alpha channel color | **color_a** | int |
+| Red channel color | **color_r** | int |
+| Green channel color | **color_g** | int |
+| Blue channel color | **color_b** | int |
+| Label text | **label** | std::string |
+| Item ID | **item_id** | int |
+| Last updated timestamp | **last_updated_timestamp** | int |
+| Growth stage | **growth** | int |
+| Fruit count | **fruit_count** | int |
+| Access list | **access_list** | std::vector<int> |
 
 ---
 
@@ -209,6 +230,70 @@
 | **neck** | `9` |
 | **ances** | `10` |
 
+
+---
+
+### tile_extra_type
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| No extra type | **none** | `0` |
+| Door tile | **door** | `1` |
+| Sign tile | **sign** | `2` |
+| Lock tile | **lock** | `3` |
+| Tree tile | **tree** | `4` |
+| Unknown tile (5) | **unk_5** | `5` |
+| Mailbox tile | **mailbox** | `6` |
+| Bulletin tile | **bulletin** | `7` |
+| Dice tile | **dice** | `8` |
+| Provider tile | **provider** | `9` |
+| Achievement block | **achievement_block** | `10` |
+| Heart monitor | **heart_monitor** | `11` |
+| Donation box | **donation_box** | `12` |
+| Toy box | **toy_box** | `13` |
+| Mannequin tile | **mannequin** | `14` |
+| Magic egg tile | **magic_egg** | `15` |
+| Game block | **game_block** | `16` |
+| Game generator | **game_generator** | `17` |
+| Xenonite block | **xenonite** | `18` |
+| Dressup tile | **dressup** | `19` |
+| Crystal tile | **crystal** | `20` |
+| Burglar tile | **burglar** | `21` |
+| Spotlight tile | **spotlight** | `22` |
+| Display block | **display_block** | `23` |
+| Vending machine | **vending_machine** | `24` |
+| Fish tank | **fishtank** | `25` |
+| Solar tile | **solar** | `26` |
+| Forge tile | **forge** | `27` |
+| Giving tree | **giving_tree** | `28` |
+| Giving tree stump | **giving_tree_stump** | `29` |
+| Steam organ | **steam_organ** | `30` |
+| Silkworm tile | **silkworm** | `31` |
+| Sewing machine | **sewing_machine** | `32` |
+| Flag tile | **flag** | `33` |
+| Lobster trap | **lobster_trap** | `34` |
+| Art canvas | **art_canvas** | `35` |
+| Battle cage | **battle_cage** | `36` |
+| Pet trainer | **pet_trainer** | `37` |
+| Steam engine | **steam_engine** | `38` |
+| Lock bot | **lock_bot** | `39` |
+| Background weather | **background_weather** | `40` |
+| Spirit storage | **spirit_storage** | `41` |
+| Data bedrock | **data_bedrock** | `42` |
+| Display shelf | **display_shelf** | `43` |
+| VIP timer | **vip_timer** | `44` |
+| Challenge timer | **challenge_timer** | `45` |
+| Unknown tile (46) | **unk_46** | `46` |
+| Fish mount | **fish_mount** | `47` |
+| Portrait tile | **portrait** | `48` |
+| Stuff weather | **stuff_weather** | `49` |
+| Fossil prep | **fossil_prep** | `50` |
+| DNA machine | **dna_machine** | `51` |
+| Trickster tile | **trickster** | `52` |
+| Chemtank tile | **chemtank** | `53` |
+| Storage tile | **storage** | `54` |
+| Oven tile | **oven** | `55` |
+| Super music | **super_music** | `56` |
+| Geiger charger | **geiger_charger** | `57` |
 
 ---
 
