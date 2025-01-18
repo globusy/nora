@@ -3,4 +3,3 @@
 * **[functions](functions.md)**
 * **[structs](structs.md)**
 * **[hooks](hooks.md)**
-* **[examples](examples.md)**
