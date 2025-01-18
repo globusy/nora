@@ -12,7 +12,7 @@ log("Hello Nora!")
 
 ### sleep
 ```lua
-sleep(1337) -- sleeps 1337 ms
+sleep(1337) -- sleeps 1337 milliseconds
 ```
 
 
