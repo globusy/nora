@@ -172,60 +172,64 @@
 ## Enums
 
 ### tile_flag
-| Name | Value |
-|:-----|:-----:|
-| **none** | `tile_flag::none` |
-| **extra_data** | `tile_flag::extra_data` |
-| **locked** | `tile_flag::locked` |
-| **spliced_tree** | `tile_flag::spliced_tree` |
-| **tree_will_drop_seed** | `tile_flag::tree_will_drop_seed` |
-| **tree** | `tile_flag::tree` |
-| **flipped** | `tile_flag::flipped` |
-| **enabled** | `tile_flag::enabled` |
-| **public_** | `tile_flag::public_` |
-| **extra_frame** | `tile_flag::extra_frame` |
-| **silenced** | `tile_flag::silenced` |
-| **water** | `tile_flag::water` |
-| **glue** | `tile_flag::glue` |
-| **fire** | `tile_flag::fire` |
-| **red** | `tile_flag::red` |
-| **green** | `tile_flag::green` |
-| **blue** | `tile_flag::blue` |
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| No flags | **none** | `0x0` |
+| Has extra data | **extra_data** | `0x1` |
+| Tile is locked | **locked** | `0x2` |
+| Spliced tree | **spliced_tree** | `0x4` |
+| Tree will drop seed | **tree_will_drop_seed** | `0x8` |
+| Tree | **tree** | `0x10` |
+| Tile is flipped | **flipped** | `0x20` |
+| Tile is enabled (e.g., open for doors, enabled jammers) | **enabled** | `0x40` |
+| Public tile | **public_** | `0x80` |
+| Has extra frame | **extra_frame** | `0x100` |
+| Tile is silenced | **silenced** | `0x200` |
+| Water tile | **water** | `0x400` |
+| Glue tile | **glue** | `0x800` |
+| Fire tile | **fire** | `0x1000` |
+| Red tile | **red** | `0x2000` |
+| Green tile | **green** | `0x4000` |
+| Blue tile | **blue** | `0x8000` |
 
 ---
 
 ### body_part_type
 | Name | Value |
 |:-----|:-----:|
-| **hat** | `body_part_type::hat` |
-| **shirt** | `body_part_type::shirt` |
-| **pants** | `body_part_type::pants` |
-| **shoes** | `body_part_type::shoes` |
-| **face_item** | `body_part_type::face_item` |
-| **hand** | `body_part_type::hand` |
-| **back** | `body_part_type::back` |
-| **hair** | `body_part_type::hair` |
-| **chest_item** | `body_part_type::chest_item` |
+| **hat** | `0` |
+| **shirt** | `1` |
+| **pants** | `2` |
+| **shoes** | `3` |
+| **face_item** | `4` |
+| **hand** | `5` |
+| **back** | `6` |
+| **hair** | `7` |
+| **chest_item** | `8` |
+| **neck** | `9` |
+| **ances** | `10` |
+
 
 ---
 
 ### tile_collision_type
-| Name | Value |
-|:-----|:-----:|
-| **none** | `tile_collision_type::none` |
-| **solid** | `tile_collision_type::solid` |
-| **jump_through** | `tile_collision_type::jump_through` |
-| **gateway** | `tile_collision_type::gateway` |
-| **if_off** | `tile_collision_type::if_off` |
-| **one_way** | `tile_collision_type::one_way` |
-| **vip** | `tile_collision_type::vip` |
-| **jump_down** | `tile_collision_type::jump_down` |
-| **adventure** | `tile_collision_type::adventure` |
-| **if_on** | `tile_collision_type::if_on` |
-| **faction** | `tile_collision_type::faction` |
-| **guild** | `tile_collision_type::guild` |
-| **cloud** | `tile_collision_type::cloud` |
-| **friends_enterance** | `tile_collision_type::friends_enterance` |
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| No collision | **none** | `0` |
+| Solid collision | **solid** | `1` |
+| Jump-through platform | **jump_through** | `2` |
+| Gateway tile | **gateway** | `3` |
+| Collision when turned off | **if_off** | `4` |
+| One-way platform | **one_way** | `5` |
+| VIP-only tile | **vip** | `6` |
+| Jump-down platform | **jump_down** | `7` |
+| Adventure mode tile | **adventure** | `8` |
+| Collision when turned on | **if_on** | `9` |
+| Faction-specific tile | **faction** | `10` |
+| Guild-specific tile | **guild** | `11` |
+| Cloud tile | **cloud** | `12` |
+| Friends-only entrance | **friends_enterance** | `13` |
+
 
 ---
 
@@ -268,54 +272,54 @@
 | Acid damage | **acid_damage** | `0x10000000` |
 
 ---
-
 ### game_packet_type
-| Name | Value |
-|:-----|:-----:|
-| **state** | `game_packet_type::state` |
-| **call_function** | `game_packet_type::call_function` |
-| **update_status** | `game_packet_type::update_status` |
-| **tile_change_request** | `game_packet_type::tile_change_request` |
-| **send_map_data** | `game_packet_type::send_map_data` |
-| **send_tile_update_data** | `game_packet_type::send_tile_update_data` |
-| **send_tile_update_data_multiple** | `game_packet_type::send_tile_update_data_multiple` |
-| **tile_activate_request** | `game_packet_type::tile_activate_request` |
-| **tile_apply_damage** | `game_packet_type::tile_apply_damage` |
-| **send_inventory_state** | `game_packet_type::send_inventory_state` |
-| **item_activate_request** | `game_packet_type::item_activate_request` |
-| **item_activate_object_request** | `game_packet_type::item_activate_object_request` |
-| **send_tile_tree_state** | `game_packet_type::send_tile_tree_state` |
-| **modify_item_inventory** | `game_packet_type::modify_item_inventory` |
-| **item_change_object** | `game_packet_type::item_change_object` |
-| **send_lock** | `game_packet_type::send_lock` |
-| **send_item_database_data** | `game_packet_type::send_item_database_data` |
-| **send_particle_effect** | `game_packet_type::send_particle_effect` |
-| **set_icon_state** | `game_packet_type::set_icon_state` |
-| **item_effect** | `game_packet_type::item_effect` |
-| **set_character_state** | `game_packet_type::set_character_state` |
-| **ping_reply** | `game_packet_type::ping_reply` |
-| **ping_request** | `game_packet_type::ping_request` |
-| **got_punched** | `game_packet_type::got_punched` |
-| **app_check_response** | `game_packet_type::app_check_response` |
-| **app_integrity_fail** | `game_packet_type::app_integrity_fail` |
-| **disconnect** | `game_packet_type::disconnect` |
-| **battle_join** | `game_packet_type::battle_join` |
-| **battle_event** | `game_packet_type::battle_event` |
-| **use_door** | `game_packet_type::use_door` |
-| **send_parental** | `game_packet_type::send_parental` |
-| **gone_fishin** | `game_packet_type::gone_fishin` |
-| **steam** | `game_packet_type::steam` |
-| **pet_battle** | `game_packet_type::pet_battle` |
-| **npc** | `game_packet_type::npc` |
-| **special** | `game_packet_type::special` |
-| **send_particle_effect_v2** | `game_packet_type::send_particle_effect_v2` |
-| **active_arrow_to_item** | `game_packet_type::active_arrow_to_item` |
-| **select_tile_index** | `game_packet_type::select_tile_index` |
-| **send_player_tribute_data** | `game_packet_type::send_player_tribute_data` |
-| **ftue_set_item_to_quick_inventory** | `game_packet_type::ftue_set_item_to_quick_inventory` |
-| **pve_npc** | `game_packet_type::pve_npc` |
-| **pvpcard_battle** | `game_packet_type::pvpcard_battle` |
-| **pve_apply_player_damage** | `game_packet_type::pve_apply_player_damage` |
-| **pve_npc_position_update** | `game_packet_type::pve_npc_position_update` |
-| **set_extra_mods** | `game_packet_type::set_extra_mods` |
-| **on_step_on_tile_mod** | `game_packet_type::on_step_on_tile_mod` |
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| State update packet | **state** | `0` |
+| Call function packet | **call_function** | `1` |
+| Update status packet | **update_status** | `2` |
+| Tile change request packet | **tile_change_request** | `3` |
+| Map data packet | **send_map_data** | `4` |
+| Tile update data packet | **send_tile_update_data** | `5` |
+| Multiple tile update data packet | **send_tile_update_data_multiple** | `6` |
+| Tile activate request packet | **tile_activate_request** | `7` |
+| Tile apply damage packet | **tile_apply_damage** | `8` |
+| Inventory state packet | **send_inventory_state** | `9` |
+| Item activate request packet | **item_activate_request** | `10` |
+| Item activate object request packet | **item_activate_object_request** | `11` |
+| Tile tree state packet | **send_tile_tree_state** | `12` |
+| Modify item inventory packet | **modify_item_inventory** | `13` |
+| Item change object packet | **item_change_object** | `14` |
+| Lock data packet | **send_lock** | `15` |
+| Item database data packet | **send_item_database_data** | `16` |
+| Particle effect packet | **send_particle_effect** | `17` |
+| Icon state packet | **set_icon_state** | `18` |
+| Item effect packet | **item_effect** | `19` |
+| Character state packet | **set_character_state** | `20` |
+| Ping reply packet | **ping_reply** | `21` |
+| Ping request packet | **ping_request** | `22` |
+| Got punched packet | **got_punched** | `23` |
+| App check response packet | **app_check_response** | `24` |
+| App integrity fail packet | **app_integrity_fail** | `25` |
+| Disconnect packet | **disconnect** | `26` |
+| Battle join packet | **battle_join** | `27` |
+| Battle event packet | **battle_event** | `28` |
+| Use door packet | **use_door** | `29` |
+| Parental controls packet | **send_parental** | `30` |
+| Gone fishing packet | **gone_fishin** | `31` |
+| Steam packet | **steam** | `32` |
+| Pet battle packet | **pet_battle** | `33` |
+| NPC interaction packet | **npc** | `34` |
+| Special packet | **special** | `35` |
+| Particle effect v2 packet | **send_particle_effect_v2** | `36` |
+| Active arrow to item packet | **active_arrow_to_item** | `37` |
+| Select tile index packet | **select_tile_index** | `38` |
+| Player tribute data packet | **send_player_tribute_data** | `39` |
+| Set item to quick inventory (FTUE) packet | **ftue_set_item_to_quick_inventory** | `40` |
+| PVE NPC packet | **pve_npc** | `41` |
+| PVPCard battle packet | **pvpcard_battle** | `42` |
+| PVE player damage packet | **pve_apply_player_damage** | `43` |
+| PVE NPC position update packet | **pve_npc_position_update** | `44` |
+| Extra mods packet | **set_extra_mods** | `45` |
+| Tile mod step-on packet | **on_step_on_tile_mod** | `46` |
+
