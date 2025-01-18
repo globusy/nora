@@ -7,7 +7,7 @@
 ```lua
 -- prints game packet type 
 function example_hook(packet)
-    print("packet_type: ".. packet.type_int)
+    print("packet type: ".. packet.type_int)
 end
 
 add_hook("example", ON_GAME_PACKET, example_hook) 
