@@ -13,6 +13,8 @@
 * **[item_info_t](#item_info_t)**
 * **[net_avatar_t](#net_avatar_t)**
 * **[game_packet_t](#game_packet_t)**
+* **[packet_flag](#packet_flag)**
+* **[game_packet_type](#game_packet_type)**
 
 ---
 
@@ -155,7 +157,7 @@
 | Second count value | **count2** | int |
 | Network ID | **netid** | int |
 | Item ID | **item** | int |
-| Flags | **flags** | packet_flag |
+| Flags | **flags** | [packet_flag](#packet_flag) |
 | Flags | **flags_int** | int |
 | Float value 1 | **float1** | float |
 | Integer data | **int_data** | int |
@@ -224,6 +226,46 @@
 | **guild** | `tile_collision_type::guild` |
 | **cloud** | `tile_collision_type::cloud` |
 | **friends_enterance** | `tile_collision_type::friends_enterance` |
+
+---
+
+### packet_flag
+| Description | Name | Value |
+|:------------|:----:|:-----:|
+| No flags | **none** | `0x0` |
+| Unknown flag 1 | **unk_0x1** | `0x1` |
+| Unknown flag 2 | **unk_0x2** | `0x2` |
+| Spawn-related flag | **spawn** | `0x4` |
+| Extended flag | **extended** | `0x8` |
+| Flipped or facing left | **flipped** / **facing_left** | `0x10` |
+| Standing or solid | **standing** / **solid** | `0x20` |
+| Unknown combination flag | **unk22** | `0x22` |
+| Facing right | **facing_right** | `0x30` |
+| Fire damage flag | **fire_damage** | `0x40` |
+| Jump flag | **jump** | `0x80` |
+| Got killed | **got_killed** | `0x100` |
+| Punch flag | **punch** | `0x200` |
+| Ghost jump | **ghost_jump** | `0x2ff` |
+| Place flag | **place** | `0x400` |
+| Tile change flag | **tile_change** | `0x800` |
+| Punching combination flag | **punching** | `0xa20` |
+| Got punched | **got_punched** | `0x1000` |
+| Respawn flag | **respawn** | `0x2000` |
+| Object collection | **object_collect** | `0x4000` |
+| Trampoline flag | **trampoline** | `0x8000` |
+| Damage flag | **damage** | `0x10000` |
+| Slide flag | **slide** | `0x20000` |
+| Parasol flag | **parasol** | `0x40000` |
+| Unknown gravity-related flag | **unk_0x80000** | `0x80000` |
+| Swim flag | **swim** | `0x100000` |
+| Wall hang flag | **wall_hang** | `0x200000` |
+| Start of power-up punch | **power_up_punch_start** | `0x400000` |
+| End of power-up punch | **power_up_punch_end** | `0x800000` |
+| Unknown tile change flag | **unk_0x1000000** | `0x1000000` |
+| Hay cart-related flag | **unk_0x2000000** | `0x2000000` |
+| Acid damage-related flag | **on_acid_damage** | `0x4000000` |
+| Unknown flag | **unk_0x8000000** | `0x8000000` |
+| Acid damage | **acid_damage** | `0x10000000` |
 
 ---
 
