@@ -64,3 +64,54 @@ log("`9your current ping:`` `@" .. get_ping() .. "``.")
 -- logs your world name
 log("`9current world name:`` `@" .. get_world().name .. "``.")
 ```
+
+### get_players
+```lua
+-- prints players name in world
+for _, player in ipairs(get_players()) do
+    printps(player.name)
+end
+```
+
+### get_inventory
+```lua
+-- prints inventory item's id and count
+for _, item in ipairs(get_inventory()) do
+    printps("item id, count: " .. item.item_id ..", ".. item.count)
+end
+```
+
+### get_local_player
+```lua
+-- logs local player name
+log("`9local player name:`` `@" .. get_local_player().name .. "``.")
+```
+
+### get_item_info_manager
+```lua
+-- logs item id (2) name 'Dirt' 
+item_info_manager = get_item_info_manager()
+log("`9item id (2) name:`` `@" .. item_info_manager.get_item(2).name .. "``.")
+```
+
+### warp
+```lua
+-- warps to another world
+warp("norabetter")
+```
+
+### drop
+```lua
+-- drops all inventory
+item_info_manager = get_item_info_manager()
+for _, item in ipairs(get_inventory()) do
+     item_info = item_info_manager.get_item(item.item_id)
+     if item_info.flags ~= item_flag.untradeable then -- checks item untradeable or not
+        drop(item.item_id, item.count)
+     end
+end
+```
+
+
+
+
