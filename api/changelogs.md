@@ -1,5 +1,8 @@
 # Changelogs
 
+## 0.8
+- **flags, types initialization**
+
 ## 0.6 
 - **added timer and transformer library**
 
