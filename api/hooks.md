@@ -12,7 +12,7 @@
 -- example variant list hook to handle the variant list
 function on_variant_list(varlist)
     -- Iterate through the provided varlist
-    for i = o, #varlist do
+    for i = 0, #varlist do
         print("variant " .. i .. ": " .. varlist[i])
     end
 end
