@@ -1,5 +1,10 @@
 # Changelogs
 
+## 0.9
+- **vend locator update**
+- **redesigned pages**
+
+
 ## 0.85
 - **improvements about automation, fixed mem leak**
 - **added auto nian (Currently have these automations: nian, farm, store buy, surg, crime, party)**
