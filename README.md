@@ -1,5 +1,6 @@
 # Nora Internal
 - growtopia internal (works with latest version of gt)
+- **[Nora Website](https://nora.zya.me)**
 * **[Executor API](api/readme.md)**
 * **[General Changelogs](changelogs.md)**
 * **[Discord Server](https://discord.gg/7zeRmJ38R8) ... there's videos about internal and more...**
