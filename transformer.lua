@@ -56,3 +56,6 @@ StopFile = stop_file
 GetItemInfo = get_item_info
 GetItemInfoByName = get_item_info_by_name
 Sleep = sleep
+Chat = chat
+Talk = chat
+talk = chat
