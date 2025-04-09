@@ -1,21 +1,20 @@
 # Changelogs
 
-## 0.9
+## 0.1.9
 - **vend locator update**
 - **redesigned pages**
 
-
-## 0.85
+## 0.1.8
 - **improvements about automation, fixed mem leak**
 - **added auto nian (Currently have these automations: nian, farm, store buy, surg, crime, party)**
 
-## 0.8
+## 0.1.7
 - **flags, types initialization**
 
-## 0.6 
+## 0.1.6 
 - **added timer and transformer library**
 
-## 0.5
+## 0.1.5
 - **added structures such as: player_items_t, net_object_manager_t, item_info_manager_t, item_info_t, vec2<uint8_t>, vec3f, vec4f**
 - **run_file(string file_name)** (runs script of that file)
 - **stop_file(string file_name)** (stops script of that file)
@@ -31,7 +30,7 @@
 - **get_item_info_manager()** (returns item_info_manager_t struct)
 - **send_varlist(varlist)** 
 
-## 0.4
+## 0.1.4
 - **added structures such as: world_t, world_tile_map_t, world_object_map_t, tile_collision_type, tile_flag, tile_extra, tile_t, object_t**
 - **get_world()** 
 - **get_world().name** 
@@ -41,7 +40,7 @@
 - **get_world().object_map** 
 - **get_world().object_map.objects** 
 
-## 0.3
+## 0.1.3
 - **added structures such as: net_avatar_t, body_parts_t, body_part_type**
 - **say(string text)** -- can work with: chat(string), talk(string)
 - **wrench(int x, int y)**
@@ -53,7 +52,7 @@
 - **remove_callbacks()** -- can work with remove_hooks();
 - **add_callback(string callback_name, callback_type (ON_VARIANT_LIST, ON_GAME_PACKET...), function)** -- can work with add_hook(string, callback_type, function)
 
-## 0.2
+## 0.1.2
 - **added structures such as: net_avatar_t, body_parts_t, body_part_type**
 - **say(string text)** -- can work with: chat(string), talk(string)
 - **wrench(int x, int y)**
@@ -65,7 +64,7 @@
 - **remove_callbacks()** -- can work with remove_hooks();
 - **add_callback(string callback_name, callback_type (ON_VARIANT_LIST, ON_GAME_PACKET...), function)** -- can work with add_hook(string, callback_type, function)
 
-## 0.1
+## 0.1.1
 - **added structures such as: game_packet_t, game_packet_type, vec2i, vec2f**
 - **log(string)**
 - **sleep(int ms)**
