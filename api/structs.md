@@ -67,9 +67,9 @@
 ### tile_t
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| Foreground tile ID | **id** | int |
-| Background tile ID | **count** | int |
-| Tile flags | **flag** | int |
+| Foreground tile ID | **fg** | int |
+| Background tile ID | **bg** | int |
+| Tile flags | **flag** | [tile_flag](#tile_flag) |
 | Tile position | **pos** | [vec2i](#vec2i) |
 | Extra tile data | **extra** | [tile_extra_t](#tile_extra_t) |
 
