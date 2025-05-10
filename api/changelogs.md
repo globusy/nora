@@ -1,5 +1,27 @@
 # Changelogs
 
+## Beta 0.2.2
+    [+] open multiple gt ( mutex fix )
+
+## Beta 0.2.2
+    [+] account login
+    [+] launched internal count will be showen in growtopia's window name<br>
+    [+] after you login with your account there'll be dialog for code that can be used at #code for gain role<br>
+    [~] website's 80-90% finished last things common things such as lua docs etc
+    
+## Beta 0.2.1
+    [+] text editor (executor) added ctrl + backspace working well
+    [~] text editor (executor) colors such as '[[ ]]' '--[[ ]]' fixed
+
+    
+## Beta 0.2.0
+    [+] added ping watermark also watermarks shown at right bottom at the moment<br>
+    [+] now if you explore vend worlds you will help our database of vend locator<br>
+    [+] added user checker in world if has nora user shows you<br>
+    [+] nora logger added button to open terminal<br>
+    [~] nora logger fixed extra line '\n' when copying
+
+
 ## 0.1.9
 - **vend locator update**
 - **redesigned pages**
