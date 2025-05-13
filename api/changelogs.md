@@ -2,7 +2,7 @@
 
 ## Beta 0.2.3
     [+] multiple growtopia fix (mutex)
-    [~] fixed loader download issue
+    [~] fixed website loader downloader issue
     [~] fixed features such as wrench pull
     [~] fixed dialog issues
 
