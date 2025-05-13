@@ -1,7 +1,10 @@
 # Changelogs
 
-## Beta 0.2.2
-    [+] open multiple gt ( mutex fix )
+## Beta 0.2.3
+    [+] multiple growtopia fix (mutex)
+    [~] fixed loader download issue
+    [~] fixed features such as wrench pull
+    [~] fixed dialog issues
 
 ## Beta 0.2.2
     [+] account login
