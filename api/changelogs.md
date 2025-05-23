@@ -1,5 +1,9 @@
 # Changelogs
 
+## Beta 0.2.4
+    [+] Updated gui backend for latest growtopia
+    [~] structure update
+    
 ## Beta 0.2.3
     [+] multiple growtopia fix (mutex)
     [~] fixed website loader downloader issue
