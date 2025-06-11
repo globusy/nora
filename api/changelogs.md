@@ -1,5 +1,10 @@
 # Changelogs
 
+## Beta 0.2.5
+    [+] Added links of casinos (rudys/ju it will auto go to their casinos)
+    [+] Added Auto Login (you gotta click checkbox and save your config as default.cfg)
+    [~] fixed some logic issues
+    
 ## Beta 0.2.4
     [+] Updated gui backend for latest growtopia
     [~] structure update
