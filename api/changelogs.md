@@ -1,5 +1,15 @@
 # Changelogs
 
+## v0.3
+    [+] added special talk between nora users
+    [+] added hosting page (still on development)
+    [+] added mod detector page (only for vip users)
+    [+] added auto updater (no more waiting for new update)
+    [+] added auto remove visual items from your inventory when close visual clothes
+    [+] added visuals (player esp, object esp, weather esp, placed item esp [placed block/background esp])
+    [~] re-organized cheats & settings page
+    [~] fixed visuals (no more any issues)
+
 ## Beta 0.2.5
     [+] Added links of casinos (rudys/ju it will auto go to their casinos)
     [+] Added Auto Login (you gotta click checkbox and save your config as default.cfg)
