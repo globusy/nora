@@ -1,6 +1,6 @@
 # Changelogs
 
-## v0.3
+## Release 0.3
     [+] added special talk between nora users
     [+] added hosting page (still on development)
     [+] added mod detector page (only for vip users)
