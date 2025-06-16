@@ -1,4 +1,4 @@
-# Nora Internal **[Website](https://nora.zya.me)**
+# Nora Internal v0.3 **[Website](https://nora.zya.me)**
 # **[Discord Server](https://discord.gg/7zeRmJ38R8)**
 - **growtopia internal**
 * **[Executor API](api/readme.md)**
